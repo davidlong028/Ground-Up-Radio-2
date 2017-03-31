@@ -1,11 +1,8 @@
 version: "Apple Swift version 3.0.2 (swiftlang-800.0.63 clang-800.0.42.1)"
 options: "0152d38f08c626b764176ff8a5597232"
-build_time: [544263299, 555739000]
+build_time: [544286103, 157983000]
 inputs:
-  "/Volumes/Avenir Desi/Dropbox/AvenirDesign/Avenir Designs/Apps/Ground Up Radio/Ground Up Radio/RadioStation.swift": !dirty [544023552, 0]
-  "/Volumes/Avenir Desi/Dropbox/AvenirDesign/Avenir Designs/Apps/Ground Up Radio/Ground Up Radio/DataManager.swift": !dirty [544030277, 0]
-  "/Volumes/Avenir Desi/Dropbox/AvenirDesign/Avenir Designs/Apps/Ground Up Radio/Ground Up Radio/RadioSettings.swift": !dirty [544028845, 0]
-  "/Volumes/Avenir Desi/Dropbox/AvenirDesign/Avenir Designs/Apps/Ground Up Radio/Ground Up Radio/Player.swift": !dirty [544024025, 0]
-  "/Volumes/Avenir Desi/Dropbox/AvenirDesign/Avenir Designs/Apps/Ground Up Radio/Ground Up Radio/AppDelegate.swift": !dirty [543930323, 0]
-  "/Volumes/Avenir Desi/Dropbox/AvenirDesign/Avenir Designs/Apps/Ground Up Radio/Ground Up Radio/Now-PlayingViewController.swift": !dirty [544035888, 0]
-  "/Volumes/Avenir Desi/Dropbox/AvenirDesign/Avenir Designs/Apps/Ground Up Radio/Ground Up Radio/Track.swift": !dirty [544026081, 0]
+  "/Volumes/Avenir Desi/Dropbox/AvenirDesign/Avenir Designs/Apps/Ground Up Radio/Ground Up Radio/RadioPlayer.swift": [544279737, 0]
+  "/Volumes/Avenir Desi/Dropbox/AvenirDesign/Avenir Designs/Apps/Ground Up Radio/Ground Up Radio/AppDelegate.swift": [544286101, 0]
+  "/Volumes/Avenir Desi/Dropbox/AvenirDesign/Avenir Designs/Apps/Ground Up Radio/Ground Up Radio/BlogViewController.swift": [544283524, 0]
+  "/Volumes/Avenir Desi/Dropbox/AvenirDesign/Avenir Designs/Apps/Ground Up Radio/Ground Up Radio/Now-PlayingViewController.swift": [544286101, 0]

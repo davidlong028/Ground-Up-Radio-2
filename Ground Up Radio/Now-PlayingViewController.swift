@@ -8,48 +8,51 @@
 
 import UIKit
 import AVKit
+import AVFoundation
+import MediaPlayer
 
-protocol NowPlayingViewControllerDelegate: class {
-    func songMetaDataDidUpdate(track: Track)
-    func trackPlayingToggled(track: Track)
-}
 
 
 
 class Now_PlayingViewController: UIViewController {
     
-    @IBOutlet weak var playBtn: UIButton!
-    @IBOutlet weak var pauseBtn: UIButton!
+  
     @IBOutlet weak var songTitle: UILabel!
     @IBOutlet weak var artistLabel: UILabel!
-    @IBOutlet weak var playWidth: NSLayoutConstraint!
-    @IBOutlet weak var playHeight: NSLayoutConstraint!
-    @IBOutlet weak var tabBar: UITabBar!
+    @IBOutlet weak var playBtn: UIButton!
     
-    var currentStation: RadioStation!
-    var downloadTask: URLSessionDownloadTask?
-    var iPhone4 = false
-    var justBecameActive = false
-    var radioPlayer = Player.radio
-    var track: Track!
-    weak var delegate: NowPlayingViewControllerDelegate?
+  
     
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-    
-    //*****************************************************************
-    // MARK: - Setup
-    //*****************************************************************
-    
-    func setupPlayer() {
-        radioPlayer.
         
+        do {
+            try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback)
+            UIApplication.shared.beginReceivingRemoteControlEvents()
+            print("Receiving remote control events\n")
+        } catch {
+            print("Audio Session error.\n")
+        }
+        
+        if NSClassFromString("MPNowPlayingInfoCenter") != nil {
+            let image:UIImage = UIImage(named: "logo_player_background")!
+            let albumArt = MPMediaItemArtwork.init(boundsSize: image.size, requestHandler: { (size) -> UIImage in
+                return image
+            })
+            let songInfo = [
+                MPMediaItemPropertyTitle: "Ground Up Radio",
+                MPMediaItemPropertyArtist: "http://GroundUpRadio.com",
+                MPMediaItemPropertyArtwork: albumArt
+            ] as [String : Any]
+            MPNowPlayingInfoCenter.default().nowPlayingInfo = songInfo
+            
+        }
+
     }
+    
+    
     
     
 
@@ -68,5 +71,30 @@ class Now_PlayingViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    @IBAction func playButtonPressed(_ sender: UIButton) {
+        toggle()
+        
+    }
+    
+    func toggle() {
+        if RadioPlayer.sharedInstance.currentlyPlaying() {
+            
+            pauseRadio()
+        } else {
+            
+            playRadio()
+        }
+    }
+    
+    func playRadio() {
+        RadioPlayer.sharedInstance.play()
+        playBtn.setImage(#imageLiteral(resourceName: "pause---img"), for: UIControlState.normal)
+    }
+    
+    func pauseRadio() {
+        RadioPlayer.sharedInstance.pause()
+        playBtn.setImage(#imageLiteral(resourceName: "play---img"), for: UIControlState.normal)
+        
+    }
 
 }
