@@ -7,21 +7,39 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		220BF5011E8A9D1C00C527EB /* RadioStation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220BF5001E8A9D1C00C527EB /* RadioStation.swift */; };
+		220BF5031E8A9EF800C527EB /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220BF5021E8A9EF800C527EB /* Player.swift */; };
+		220BF5051E8AA0D800C527EB /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220BF5041E8AA0D800C527EB /* Track.swift */; };
+		220BF5071E8AA8E000C527EB /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220BF5061E8AA8E000C527EB /* DataManager.swift */; };
+		220BF5091E8AB2D700C527EB /* RadioSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220BF5081E8AB2D700C527EB /* RadioSettings.swift */; };
+		220BF50B1E8AB94500C527EB /* Now-PlayingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220BF50A1E8AB94500C527EB /* Now-PlayingViewController.swift */; };
 		226471951E8932D3009C9325 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226471941E8932D3009C9325 /* AppDelegate.swift */; };
-		226471971E8932D3009C9325 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226471961E8932D3009C9325 /* ViewController.swift */; };
 		2264719A1E8932D3009C9325 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 226471981E8932D3009C9325 /* Main.storyboard */; };
 		2264719C1E8932D3009C9325 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2264719B1E8932D3009C9325 /* Assets.xcassets */; };
 		2264719F1E8932D3009C9325 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2264719D1E8932D3009C9325 /* LaunchScreen.storyboard */; };
+		226471AA1E893D2F009C9325 /* logo---img.png in Resources */ = {isa = PBXBuildFile; fileRef = 226471A61E893D2F009C9325 /* logo---img.png */; };
+		226471AB1E893D2F009C9325 /* pause---img.png in Resources */ = {isa = PBXBuildFile; fileRef = 226471A71E893D2F009C9325 /* pause---img.png */; };
+		226471AC1E893D2F009C9325 /* play---img.png in Resources */ = {isa = PBXBuildFile; fileRef = 226471A81E893D2F009C9325 /* play---img.png */; };
+		226471AD1E893D2F009C9325 /* background---img.png in Resources */ = {isa = PBXBuildFile; fileRef = 226471A91E893D2F009C9325 /* background---img.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		220BF5001E8A9D1C00C527EB /* RadioStation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadioStation.swift; sourceTree = "<group>"; };
+		220BF5021E8A9EF800C527EB /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		220BF5041E8AA0D800C527EB /* Track.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
+		220BF5061E8AA8E000C527EB /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		220BF5081E8AB2D700C527EB /* RadioSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadioSettings.swift; sourceTree = "<group>"; };
+		220BF50A1E8AB94500C527EB /* Now-PlayingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Now-PlayingViewController.swift"; sourceTree = "<group>"; };
 		226471911E8932D3009C9325 /* Ground Up Radio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ground Up Radio.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		226471941E8932D3009C9325 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		226471961E8932D3009C9325 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		226471991E8932D3009C9325 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2264719B1E8932D3009C9325 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2264719E1E8932D3009C9325 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		226471A01E8932D3009C9325 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		226471A61E893D2F009C9325 /* logo---img.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo---img.png"; sourceTree = "<group>"; };
+		226471A71E893D2F009C9325 /* pause---img.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pause---img.png"; sourceTree = "<group>"; };
+		226471A81E893D2F009C9325 /* play---img.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "play---img.png"; sourceTree = "<group>"; };
+		226471A91E893D2F009C9325 /* background---img.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background---img.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +72,63 @@
 		226471931E8932D3009C9325 /* Ground Up Radio */ = {
 			isa = PBXGroup;
 			children = (
+				226471B41E89444E009C9325 /* Networking */,
+				226471B31E894441009C9325 /* Support */,
+				226471B21E89443A009C9325 /* Objects */,
+				226471B11E894433009C9325 /* Views */,
+				226471B01E89442B009C9325 /* Images */,
 				226471941E8932D3009C9325 /* AppDelegate.swift */,
-				226471961E8932D3009C9325 /* ViewController.swift */,
 				226471981E8932D3009C9325 /* Main.storyboard */,
 				2264719B1E8932D3009C9325 /* Assets.xcassets */,
 				2264719D1E8932D3009C9325 /* LaunchScreen.storyboard */,
-				226471A01E8932D3009C9325 /* Info.plist */,
 			);
 			path = "Ground Up Radio";
+			sourceTree = "<group>";
+		};
+		226471B01E89442B009C9325 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				226471A61E893D2F009C9325 /* logo---img.png */,
+				226471A71E893D2F009C9325 /* pause---img.png */,
+				226471A81E893D2F009C9325 /* play---img.png */,
+				226471A91E893D2F009C9325 /* background---img.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		226471B11E894433009C9325 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				220BF50A1E8AB94500C527EB /* Now-PlayingViewController.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		226471B21E89443A009C9325 /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				220BF5001E8A9D1C00C527EB /* RadioStation.swift */,
+				220BF5021E8A9EF800C527EB /* Player.swift */,
+				220BF5041E8AA0D800C527EB /* Track.swift */,
+			);
+			name = Objects;
+			sourceTree = "<group>";
+		};
+		226471B31E894441009C9325 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				226471A01E8932D3009C9325 /* Info.plist */,
+				220BF5081E8AB2D700C527EB /* RadioSettings.swift */,
+			);
+			name = Support;
+			sourceTree = "<group>";
+		};
+		226471B41E89444E009C9325 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				220BF5061E8AA8E000C527EB /* DataManager.swift */,
+			);
+			name = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,7 +193,11 @@
 			files = (
 				2264719F1E8932D3009C9325 /* LaunchScreen.storyboard in Resources */,
 				2264719C1E8932D3009C9325 /* Assets.xcassets in Resources */,
+				226471AA1E893D2F009C9325 /* logo---img.png in Resources */,
+				226471AC1E893D2F009C9325 /* play---img.png in Resources */,
+				226471AD1E893D2F009C9325 /* background---img.png in Resources */,
 				2264719A1E8932D3009C9325 /* Main.storyboard in Resources */,
+				226471AB1E893D2F009C9325 /* pause---img.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,8 +208,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				226471971E8932D3009C9325 /* ViewController.swift in Sources */,
+				220BF5011E8A9D1C00C527EB /* RadioStation.swift in Sources */,
+				220BF5071E8AA8E000C527EB /* DataManager.swift in Sources */,
+				220BF5091E8AB2D700C527EB /* RadioSettings.swift in Sources */,
+				220BF5031E8A9EF800C527EB /* Player.swift in Sources */,
 				226471951E8932D3009C9325 /* AppDelegate.swift in Sources */,
+				220BF50B1E8AB94500C527EB /* Now-PlayingViewController.swift in Sources */,
+				220BF5051E8AA0D800C527EB /* Track.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,6 +376,7 @@
 				226471A51E8932D3009C9325 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,26 +1,131 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="APyh">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Now Playing View Controller-->
+        <scene sceneID="AV">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="APyh" customClass="Now_PlayingViewController" customModule="Ground_Up_Radio" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="Ah"/>
+                        <viewControllerLayoutGuide type="bottom" id="AeI"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="ADzlY">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background---img.png" translatesAutoresizingMaskIntoConstraints="NO" id="A3yK11722815218115">
+                                <rect key="frame" x="-312" y="0.0" width="1000" height="625"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="1000" id="Vql-9F-mhV"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo---img.png" translatesAutoresizingMaskIntoConstraints="NO" id="AyR11722815224541">
+                                <rect key="frame" x="106" y="28" width="170" height="227"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="play---img.png" translatesAutoresizingMaskIntoConstraints="NO" id="Anm11722815225293">
+                                <rect key="frame" x="139" y="308" width="51" height="51"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="51" id="9Id-ez-Jig"/>
+                                    <constraint firstAttribute="height" constant="51" id="AZX-Sh-tNv"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pause---img.png" translatesAutoresizingMaskIntoConstraints="NO" id="AV11722815225769">
+                                <rect key="frame" x="185" y="308" width="51" height="51"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="51" id="CVL-QK-iRF"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Song Title" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="42" translatesAutoresizingMaskIntoConstraints="NO" id="A1M11722815226313">
+                                <rect key="frame" x="86" y="367" width="203" height="67"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="67" id="Ir7-2M-DOy"/>
+                                    <constraint firstAttribute="height" constant="67" id="lcK-PQ-LVT"/>
+                                    <constraint firstAttribute="width" constant="203" id="mTf-IE-6ma"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="34.5"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Artist" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="42" translatesAutoresizingMaskIntoConstraints="NO" id="AyZ11722815226455">
+                                <rect key="frame" x="133" y="425" width="109" height="54"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="54" id="VBK-Fc-IGj"/>
+                                    <constraint firstAttribute="width" secondItem="AyZ11722815226455" secondAttribute="height" multiplier="109:54" id="aCO-xp-1o5"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="109" id="nyI-gl-AKT"/>
+                                    <constraint firstAttribute="width" constant="109" id="s9B-5U-mBI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="34.5"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pag-rG-xGH">
+                                <rect key="frame" x="0.0" y="618" width="375" height="49"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <items>
+                                    <tabBarItem title="Radio" image="iconTabNowPlay" id="ibj-Gq-wp1"/>
+                                    <tabBarItem title="Blog" image="iconTabBlog" id="rdd-pn-iSp"/>
+                                </items>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="barTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="selectedImageTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tabBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="AV11722815225769" firstAttribute="leading" secondItem="A3yK11722815218115" secondAttribute="trailing" constant="-503" id="0Ar-7X-zdC"/>
+                            <constraint firstItem="Anm11722815225293" firstAttribute="top" secondItem="AV11722815225769" secondAttribute="top" id="0Ln-aW-TaI"/>
+                            <constraint firstItem="AV11722815225769" firstAttribute="leading" secondItem="Anm11722815225293" secondAttribute="trailing" constant="-5" id="6da-kt-REC"/>
+                            <constraint firstItem="Pag-rG-xGH" firstAttribute="leading" secondItem="ADzlY" secondAttribute="leading" id="9nH-aV-R5I"/>
+                            <constraint firstItem="Anm11722815225293" firstAttribute="leading" secondItem="ADzlY" secondAttribute="leading" constant="139" id="Cya-xJ-93F"/>
+                            <constraint firstItem="AeI" firstAttribute="top" secondItem="Pag-rG-xGH" secondAttribute="bottom" id="GOn-5K-6pH"/>
+                            <constraint firstItem="AyR11722815224541" firstAttribute="top" secondItem="Ah" secondAttribute="bottom" constant="8" symbolic="YES" id="JhB-0M-LNL"/>
+                            <constraint firstItem="Anm11722815225293" firstAttribute="centerY" secondItem="ADzlY" secondAttribute="centerY" id="K4X-8o-t8D"/>
+                            <constraint firstItem="AV11722815225769" firstAttribute="leading" secondItem="ADzlY" secondAttribute="leading" constant="185" id="S8q-hQ-qZf"/>
+                            <constraint firstItem="A1M11722815226313" firstAttribute="top" secondItem="Anm11722815225293" secondAttribute="bottom" constant="8" symbolic="YES" id="W2w-AE-nV2"/>
+                            <constraint firstItem="A1M11722815226313" firstAttribute="leading" secondItem="ADzlY" secondAttribute="leadingMargin" constant="70" id="YDC-Kc-1ni"/>
+                            <constraint firstItem="Anm11722815225293" firstAttribute="top" secondItem="AyR11722815224541" secondAttribute="bottom" constant="53" id="Ycm-OX-aaC"/>
+                            <constraint firstAttribute="trailing" secondItem="Pag-rG-xGH" secondAttribute="trailing" id="bEq-k8-IBJ"/>
+                            <constraint firstItem="AyR11722815224541" firstAttribute="top" secondItem="Ah" secondAttribute="bottom" constant="8" id="bvV-4V-AUU"/>
+                            <constraint firstItem="AyR11722815224541" firstAttribute="leading" secondItem="ADzlY" secondAttribute="leadingMargin" constant="90" id="eVb-9t-yYL"/>
+                            <constraint firstItem="AeI" firstAttribute="top" secondItem="A3yK11722815218115" secondAttribute="bottom" constant="42" id="fj9-dO-X8I"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="AyR11722815224541" secondAttribute="trailing" constant="83" id="lyE-8b-PvG"/>
+                            <constraint firstItem="A1M11722815226313" firstAttribute="centerX" secondItem="AyZ11722815226455" secondAttribute="centerX" id="nHD-ii-blz"/>
+                            <constraint firstItem="A1M11722815226313" firstAttribute="top" secondItem="AV11722815225769" secondAttribute="bottom" constant="8" symbolic="YES" id="pen-wW-cHQ"/>
+                            <constraint firstItem="AV11722815225769" firstAttribute="top" secondItem="AyR11722815224541" secondAttribute="bottom" constant="53" id="sIQ-Us-V3b"/>
+                            <constraint firstItem="AyZ11722815226455" firstAttribute="top" secondItem="AV11722815225769" secondAttribute="bottom" constant="66" id="zwb-QH-Kos"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="artistLabel" destination="AyZ11722815226455" id="SkZ-pW-jdJ"/>
+                        <outlet property="pauseBtn" destination="AV11722815225769" id="pBQ-RB-544"/>
+                        <outlet property="playBtn" destination="Anm11722815225293" id="xgI-p9-nTP"/>
+                        <outlet property="playHeight" destination="AZX-Sh-tNv" id="qa9-pq-iWH"/>
+                        <outlet property="playWidth" destination="9Id-ez-Jig" id="GtQ-YA-2aI"/>
+                        <outlet property="songTitle" destination="A1M11722815226313" id="hqd-6h-SHv"/>
+                        <outlet property="tabBar" destination="Pag-rG-xGH" id="mIE-Mg-HNj"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ar57O" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="532" y="-18"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="background---img.png" width="999" height="625"/>
+        <image name="iconTabBlog" width="25" height="25"/>
+        <image name="iconTabNowPlay" width="25" height="25"/>
+        <image name="logo---img.png" width="170" height="227"/>
+        <image name="pause---img.png" width="56" height="56"/>
+        <image name="play---img.png" width="56" height="56"/>
+    </resources>
 </document>
